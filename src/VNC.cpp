@@ -106,7 +106,7 @@ void arduinoVNC::begin(char *_host, uint16_t _port, bool _onlyFullUpdate) {
 #ifndef ESP32
     opt.client.bigendian = 1;
 #else
-    opt.client.bigendian = 1;
+    opt.client.bigendian = 0;
 #endif
     opt.client.truecolour = 1;
 
